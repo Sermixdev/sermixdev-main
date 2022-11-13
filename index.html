@@ -12,6 +12,7 @@
     <!-- Bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <!-- Website title  -->
     <title>Sermixdev | ¡Hola mundo!</title>
     <!-- Google Fonts  -->
@@ -27,7 +28,9 @@
 </head>
 
 <body>
-    <header class="header bg-onWhite">
+    <a href="#home"><i class="toHome bi bi-arrow-up-square"></i></a>
+    <!-- HEADER AND HERO SECTION  -->
+    <header id="home" class="header bg-onLight">
         <!-- NAVIGATION BAR -->
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
@@ -41,9 +44,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" href="#">Inicio</a>
-                        <a class="nav-link" href="#">Sobre mí</a>
-                        <a class="nav-link" href="#">Habilidades</a>
+                        <a class="nav-link" href="#home">Inicio</a>
+                        <a class="nav-link" href="#about-me">Sobre mí</a>
+                        <a class="nav-link" href="#skills">Habilidades</a>
                         <a class="nav-link" href="#">Proyectos</a>
                         <a class="nav-link" href="#">Contacto</a>
                     </div>
@@ -52,15 +55,37 @@
         </nav>
 
         <!-- HERO SECTION  -->
-        <section class="hero bg-onWhite">
+        <section class="hero bg-onLight">
             <div class="hero-content container-fluid">
-                <h1 class="hero-title">¡Hola! Mi nombre es <i>Sergio FB</i></h1>
-                <h2 id="hero-subtitle" class="hero-subtitle">Alias <i>sermixdev</i></h2>
+                <h1 class="hero-title tPri">¡Hola! Mi nombre es <i>Sergio FB</i></h1>
+                <h2 class="hero-subtitle tSec">Alias <i>sermixdev</i></h2>
                 <img class="hero-img-profile" src="https://via.placeholder.com/150x150?text=PERFIL"
                     alt="Imagen de perfil de Sermixdev">
             </div>
         </section>
     </header>
+
+    <!-- ABOUT ME SECTION  -->
+    <section id="about-me"
+        class="about-me d-flex flex-column bg-onDark text-center container-fluid align-items-center justify-content-center">
+        <h2 class="tSec">Sobre mí</h2>
+        <p class="pPri">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis earum ad itaque aliquid accusamus
+            fugiat quas magni, alias amet accusantium dolores quia inventore officiis ipsum qui odit? Possimus delectus,
+            cum autem aut, culpa deserunt praesentium porro veritatis numquam cumque totam excepturi temporibus
+            similique accusantium voluptatem omnis quod consectetur corrupti, itaque vero dolores! Aperiam minus rem
+            nisi esse, blanditiis veritatis, perferendis accusamus voluptates eligendi, nostrum optio culpa tempora?
+            Vitae at dolores neque quisquam temporibus suscipit repellat cum molestias laudantium recusandae voluptatem
+            ab, voluptatum error placeat praesentium rem ipsum numquam, sequi optio mollitia? Laborum fugiat ducimus
+            suscipit dolorem nihil ab, velit neque unde aperiam debitis itaque at ullam expedita eos. In commodi alias
+            quo quas autem exercitationem expedita ratione, accusantium asperiores, quae harum cum numquam perspiciatis
+            dicta optio, error nulla explicabo debitis?</p>
+    </section>
+
+    <!-- SKILLS SECTION  -->
+    <section id="skills"
+        class="skills d-flex flex-column bg-onLight text-center align-items-center justify-content-center">
+        <h2 class="tSec">hola que tal</h2>
+    </section>
 
     <!-- SCRIPTS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
