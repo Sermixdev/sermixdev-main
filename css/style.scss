@@ -1,0 +1,81 @@
+// #### FONTS #### 
+// font-family: 'Acme', sans-serif;
+// font-family: 'Exo 2', sans-serif;
+// font-family: 'Indie Flower', cursive;
+// font-family: 'Merienda', cursive;
+// font-family: 'Press Start 2P', cursive;
+
+
+//  #### NAVIGATION BAR ####
+.navbar {
+    background-color: #eaeaea;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    .navbar-collapse {
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .navbar-nav {
+        justify-content: center;
+        align-items: flex-end;
+    }
+}
+
+// #### GENERAL STYLES #### 
+.bg-onBlack {
+    background-color: black;
+    color: white;
+}
+
+.bg-onWhite {
+    background-color: #EAEAEA !important;
+    color: black;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: 'Merienda', cursive;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: 'Merienda', cursive;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+i {
+    font-style: normal;
+    font-weight: bold;
+    color: burlywood;
+}
+
+// #### HERO SECTION #### 
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0px;
+
+    .hero-content {
+        .hero-title {
+            margin-top: 50px;
+            transition: all 300ms ease-in;
+        }
+        .hero-img-profile {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            margin: 50px 0px;
+            margin-top: 70px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+    }
+
+}
