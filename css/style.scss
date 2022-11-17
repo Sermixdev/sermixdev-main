@@ -7,6 +7,7 @@
 
 
 //  #### NAVIGATION BAR ####
+
 .navbar {
     background-color: #eaeaea;
     font-size: 1.2rem;
@@ -21,30 +22,32 @@
         justify-content: center;
         align-items: flex-end;
     }
-    .navbar-brand{
+
+    .navbar-brand {
         margin: 10px;
     }
 }
 
 // #### GENERAL STYLES #### 
-.toHome{
+.toHome {
     position: fixed;
     width: 50px;
     height: 50px;
     bottom: 20px;
     right: 30px;
     color: rgb(238, 1, 1);
-    text-shadow: 0 0 2px rgba(255,255,255,0.5), 0 0 2px rgba(0,0,0,0.5);
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.5);
     transition: all 300ms;
     font-size: 1.8rem;
     text-align: center;
-    &:hover{
+
+    &:hover {
         transform: scale(1.5);
     }
 }
 
 .bg-onDark {
-    background-color: rgb(51, 30, 63);
+    background-color: rgb(84, 60, 97);
     color: white;
 }
 
@@ -64,7 +67,8 @@
     font-family: 'Merienda', cursive;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.pPri{
+
+.pPri {
     font-family: 'Merienda', cursive;
 }
 
@@ -75,22 +79,26 @@ i {
 }
 
 // #### HERO SECTION #### 
-.header{
+.header {
     width: 100%;
     height: 100vh;
     background-color: aquamarine;
+
     .hero {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
+
         .hero-content {
             height: auto;
+
             .hero-title {
-                margin-top: 50px;
+                margin-top: 30px;
                 transition: all 300ms ease-in;
             }
+
             .hero-img-profile {
                 width: 24.4%;
                 height: 24.4%;
@@ -108,31 +116,64 @@ i {
     }
 }
 
-// #### ABOUT ME SECTION #### 
-.about-me{
-    height: 100vh;
-}
-
-// #### SKILLS ####
+// #### SKILLS SECTION ####  
 .skills{
     height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+@media screen and (max-width: 1280px){
+    .skills{
+        height: 100%;
+    }
 }
 
+// #### PROJECTS SECTION ####  
+.projects{
+    height: 100vh;
+}
+
+// #### ABOUT ME SECTION #### 
+.about-me {
+    .about-me-content{
+        box-shadow: 0 0 10px rgba(84, 60, 97, 0.5), 0 0 20px rgba(84, 60, 97, 0.7);
+        border-radius: 100px;
+        border: 5px solid white;
+        min-height: 400px;
+        .pPri{
+            margin: 20px 15px 0 15px;
+        }
+    }
+
+}
+
+// #### CONTACT SECTION ####
+.contact{
+    z-index: 0;
+    height: 50vh;
+}
+
+
+
 // #### MEDIA QUERIES ####
-@media screen and (max-width: 767px){
-    .hero-img-profile{
+@media screen and (max-width: 767px) {
+    .hero-img-profile {
         min-width: 35%;
         min-height: 35%;
     }
 }
 
 // #### ANIMATIONS ####
-@keyframes palpito{
-    0%{
+@keyframes palpito {
+    0% {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    }50%{
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7),0 0 10px rgba(0, 0, 0, 0.7),
-    }100%{
+    }
+
+    50% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7), 0 0 10px rgba(0, 0, 0, 0.7),
+    }
+
+    100% {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 }

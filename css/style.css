@@ -32,7 +32,7 @@
 }
 
 .bg-onDark {
-  background-color: rgb(51, 30, 63);
+  background-color: rgb(84, 60, 97);
   color: white;
 }
 
@@ -79,7 +79,7 @@ i {
   height: auto;
 }
 .header .hero .hero-content .hero-title {
-  margin-top: 50px;
+  margin-top: 30px;
   transition: all 300ms ease-in;
 }
 .header .hero .hero-content .hero-img-profile {
@@ -101,12 +101,77 @@ i {
           animation-duration: 3s;
 }
 
-.about-me {
+.skills {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+.skills .skills-container {
+  height: 100%;
+  border: 4px solid chartreuse;
+}
+.skills .skills-container .skills-title {
+  height: 17%;
+  text-align: center;
+  border: 4px solid red;
+}
+.skills .skills-container .skills-content {
+  height: 83%;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: 4px solid blue;
+}
+.skills .skills-container .skills-content .skills-content-block {
+  width: 47%;
+  height: 100%;
+  border: 4px solid yellow;
+}
+.skills .skills-container .skills-content .skills-content-block p {
+  text-align: center;
+  font-size: 1.9rem;
+  padding: 20px;
+}
+.skills .skills-container .skills-content .skills-content-block ul {
+  margin: 0;
+  padding: 0;
+  gap: 2%;
+  list-style: none;
+}
+.skills .skills-container .skills-content .skills-content-block ul li {
+  margin: 5px;
+  text-align: center;
+  border: 3px solid salmon;
+}
+.skills .skills-container .skills-content .skills-content-block .iconos {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 150px;
+  height: 150px;
+}
+
+@media screen and (max-width: 1280px) {
+  .skills {
+    height: 100%;
+  }
+}
+.projects {
   height: 100vh;
 }
 
-.skills {
-  height: 100vh;
+.about-me .about-me-content {
+  box-shadow: 0 0 10px rgba(84, 60, 97, 0.5), 0 0 20px rgba(84, 60, 97, 0.7);
+  border-radius: 100px;
+  border: 5px solid white;
+  min-height: 400px;
+}
+.about-me .about-me-content .pPri {
+  margin: 20px 15px 0 15px;
+}
+
+.contact {
+  z-index: 0;
+  height: 50vh;
 }
 
 @media screen and (max-width: 767px) {
